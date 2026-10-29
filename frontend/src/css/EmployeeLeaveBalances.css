@@ -1,0 +1,227 @@
+
+/* ==========================================
+   EMPLOYEE LEAVE BALANCES — CONTAINER
+   ========================================== */
+
+.employee-leave-balances {
+  width: 100%;
+  margin: 24px 0;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e0ede5;
+  border-radius: 18px;
+  box-shadow: 0 5px 22px rgba(18, 76, 50, 0.06);
+}
+
+/* HEADER */
+
+.employee-leave-balances-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.employee-leave-balances-header h2 {
+  margin: 8px 0;
+  color: #0b3028;
+  font-size: 24px;
+  font-weight: 750;
+}
+
+.employee-leave-balances-header p {
+  margin: 0;
+  color: #668077;
+  font-size: 14px;
+}
+
+.employee-leave-balances-header button {
+  padding: 10px 18px;
+  background: #f3faf5;
+  color: #168e62;
+  border: 1px solid #d4e8db;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.employee-leave-balances-header button:hover {
+  background: #e5f5eb;
+}
+
+/* YEAR FILTER */
+
+.employee-leave-balances-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.employee-leave-balances-toolbar label {
+  color: #365747;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.employee-leave-balances-toolbar input {
+  width: 130px;
+  padding: 11px 14px;
+  border: 1px solid #d5e4db;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #183f2d;
+  font-size: 14px;
+  outline: none;
+}
+
+.employee-leave-balances-toolbar input:focus {
+  border-color: #26ab70;
+  box-shadow: 0 0 0 3px rgba(38, 171, 112, 0.12);
+}
+
+/* SUMMARY */
+
+.employee-leave-balances-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 24px;
+  margin-bottom: 24px;
+  border: 1px solid #c8e9d4;
+  border-radius: 14px;
+  background: #f0faf4;
+}
+
+.employee-leave-balances-summary span {
+  color: #365747;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.employee-leave-balances-summary strong {
+  color: #168e62;
+  font-size: 26px;
+  font-weight: 750;
+}
+
+/* TABLE */
+
+.employee-leave-balances-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e0ede5;
+  border-radius: 12px;
+}
+
+.employee-leave-balances-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 850px;
+}
+
+.employee-leave-balances-table thead {
+  background: #f3faf5;
+}
+
+.employee-leave-balances-table th {
+  padding: 15px 16px;
+  color: #557264;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid #e0ede5;
+}
+
+.employee-leave-balances-table td {
+  padding: 16px;
+  color: #365747;
+  font-size: 13px;
+  border-bottom: 1px solid #edf3ee;
+}
+
+.employee-leave-balances-table tbody tr:hover {
+  background: #f8fcf9;
+}
+
+.employee-leave-balances-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.employee-leave-balances-table td:first-child {
+  max-width: 200px;
+  overflow-wrap: anywhere;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.employee-leave-balances-table td strong {
+  color: #168e62;
+}
+
+/* EMPTY AND ERROR STATES */
+
+.employee-leave-balances-empty {
+  padding: 28px;
+  text-align: center;
+  color: #668077;
+  background: #f8fcf9;
+  border: 1px dashed #d5e4db;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.employee-leave-balances-error {
+  padding: 14px 16px;
+  margin: 16px 0;
+  color: #a72424;
+  background: #fff1f1;
+  border: 1px solid #f5c8c8;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .employee-leave-balances {
+    padding: 22px;
+  }
+
+  .employee-leave-balances-summary strong {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .employee-leave-balances {
+    padding: 18px;
+  }
+
+  .employee-leave-balances-header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .employee-leave-balances-header h2 {
+    font-size: 21px;
+  }
+
+  .employee-leave-balances-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .employee-leave-balances-summary {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .employee-leave-balances-summary strong {
+    font-size: 24px;
+  }
+}

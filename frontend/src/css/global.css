@@ -1,0 +1,29 @@
+
+/* =========================================================
+   01. GLOBAL RESET & THEME
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  color: #0b3028;
+  background: #f6fbf8;
+  font-synthesis: none;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}

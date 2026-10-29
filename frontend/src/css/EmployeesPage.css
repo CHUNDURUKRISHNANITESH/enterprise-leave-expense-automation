@@ -1,0 +1,344 @@
+
+/* =========================================================
+   01. EMPLOYEES — PAGE HEADER
+   ========================================================= */
+
+.employees-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.employees-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.employees-header h1 {
+  margin: 8px 0;
+  font-size: clamp(30px, 3vw, 42px);
+  color: #0b3028;
+}
+
+.employees-header p {
+  margin: 0;
+  color: #668077;
+  font-size: 15px;
+}
+
+/* =========================================================
+   02. EMPLOYEES — SEARCH AND FILTERS
+   ========================================================= */
+
+.employees-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 22px;
+  margin-bottom: 24px;
+  background: #fff;
+  border: 1px solid #e0ede5;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px #124c3210;
+}
+
+.employees-toolbar input {
+  min-width: 0;
+  flex: 1 1 190px;
+  padding: 13px 16px;
+  border: 1px solid #d5e4db;
+  border-radius: 10px;
+  background: #fff;
+  color: #0b3028;
+  outline: none;
+  font-size: 14px;
+}
+
+.employees-toolbar input:first-child {
+  flex: 2 1 260px;
+}
+
+.employees-toolbar input:focus {
+  border-color: #26ab70;
+  box-shadow: 0 0 0 3px #26ab7020;
+}
+
+.employees-toolbar input::placeholder {
+  color: #8a9f95;
+}
+
+/* =========================================================
+   03. EMPLOYEES — TABLE
+   ========================================================= */
+
+.employees-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #e0ede5;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px #124c3210;
+}
+
+.employees-table {
+  width: 100%;
+  min-width: 750px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.employees-table thead {
+  background: #edf8f1;
+}
+
+.employees-table th {
+  padding: 18px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #376b54;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.employees-table td {
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #40594e;
+  border-top: 1px solid #eaf1ec;
+}
+
+.employees-table tbody tr:hover {
+  background: #f7fcf9;
+}
+
+.employees-table td strong {
+  display: block;
+  color: #163d2c;
+  font-weight: 650;
+  margin-bottom: 5px;
+}
+
+.employees-table td small {
+  display: block;
+  color: #81958a;
+  font-size: 12px;
+}
+
+.employees-table td button {
+  border: 1px solid #bce6cc;
+  background: #eaf8ef;
+  color: #168e62;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-weight: 650;
+}
+
+.employees-table td button:hover {
+  background: #d8f2e3;
+}
+
+/* =========================================================
+   04. EMPLOYEES — STATUS
+   ========================================================= */
+
+.employees-status {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #e5f8ec;
+  color: #168e62;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   05. EMPLOYEES — PAGINATION
+   ========================================================= */
+
+.employees-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 22px 4px;
+  color: #627c70;
+  font-size: 14px;
+}
+
+.employees-pagination > div {
+  display: flex;
+  gap: 10px;
+}
+
+.employees-pagination button {
+  padding: 10px 18px;
+  background: #fff;
+  color: #168e62;
+  border: 1px solid #cce7d7;
+  border-radius: 9px;
+  font-weight: 600;
+}
+
+.employees-pagination button:hover:not(:disabled) {
+  background: #eaf8ef;
+}
+
+.employees-pagination button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   06. EMPLOYEES — DETAILS PANEL
+   ========================================================= */
+
+.employees-detail {
+  margin-top: 25px;
+  background: #fff;
+  border: 1px solid #dcebe1;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 5px 22px #124c3210;
+}
+
+.employees-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.employees-detail-header h2 {
+  margin: 0;
+  color: #0b3028;
+  font-size: 21px;
+}
+
+.employees-detail-header button {
+  padding: 10px 16px;
+  background: #f0f7f2;
+  color: #168e62;
+  border: 1px solid #cce7d7;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.employees-detail p {
+  margin: 12px 0;
+  color: #506b5d;
+  line-height: 1.6;
+}
+
+.employees-detail p strong {
+  color: #183f2d;
+}
+
+/* =========================================================
+   07. EMPLOYEES — RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+  .employees-toolbar {
+    padding: 16px;
+  }
+
+  .employees-header {
+    align-items: flex-start;
+  }
+
+  .employees-table th,
+  .employees-table td {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .employees-toolbar {
+    flex-direction: column;
+  }
+
+  .employees-toolbar input,
+  .employees-toolbar input:first-child {
+    flex: none;
+    width: 100%;
+  }
+
+  .employees-pagination {
+    flex-wrap: wrap;
+  }
+
+  .employees-detail {
+    padding: 20px;
+  }
+}
+
+/* =========================================================
+   08. EMPLOYEES — ADD EMPLOYEE BUTTON
+   ========================================================= */
+
+.employees-add-button {
+  flex-shrink: 0;
+  padding: 13px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #26ab70;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 650;
+  transition: background 0.2s;
+}
+
+.employees-add-button:hover {
+  background: #168e62;
+}
+
+@media (max-width: 520px) {
+  .employees-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .employees-add-button {
+    width: 100%;
+  }
+}
+
+/* Employee table action buttons */
+
+.employees-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.employees-row-actions button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.employees-row-actions button:last-child {
+  background: #e8f7ee;
+  border: 1px solid #bde6ce;
+  color: #168e62;
+}
+
+.employees-row-actions button:last-child:hover {
+  background: #d4f0df;
+}
+
+/* Leave Balances action button */
+
+.employees-row-actions button:last-child {
+  background: #edf5ff;
+  border: 1px solid #c9ddf7;
+  color: #2563a6;
+}
+
+.employees-row-actions button:last-child:hover {
+  background: #dcecff;
+}
