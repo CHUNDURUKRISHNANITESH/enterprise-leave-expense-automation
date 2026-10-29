@@ -1,3 +1,10 @@
+use below login credentials to login into the enterprise-leave-expense-automation applicaton
+email id: generated.employee.000001@example.com
+password: krishnanitesh
+
+Below are chatgpt links :
+https://chatgpt.com/share/6ae2fff3-f384-83e8-ba0e-7ff78e2fc624https://chatgpt.com/share/6ae2ff73-f9b8-83ee-a875-69cb8099d669
+
 # Leave & Expense Automation
 
 Policy-aware leave and expense workflow automation with auditable approvals, reproducible synthetic data, and an AI policy assistant.
